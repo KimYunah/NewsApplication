@@ -14,8 +14,7 @@ ksp = "1.9.0-1.0.13"
 viewmodel = "2.8.7"
 hilt = "2.48"
 retrofit = "2.9.0"
-moshi = "1.9.3"
-coil = "1.4.0"
+coil = "2.2.2"
 
 
 [libraries]
@@ -31,16 +30,25 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 # ViewModel
 lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel", version.ref = "viewmodel" }
 activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
+lifecycle-livedata = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version = "2.8.7" }
+
+# Coroutine
+coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version = "1.7.3" }
 
 # Hilt
+hilt-navigation-fragment = { module = "androidx.hilt:hilt-navigation-fragment", version = "1.2.0" }
+lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version = "2.8.7" }
+
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt"}
 hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt"}
 
 # Retrofit
 retrofit-core = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
-retrofit-converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
-# Moshi
-moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshi" }
+retrofit-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+
+# Gson
+gson = { module = "com.google.code.gson:gson", version = "2.10.1" }
+
 # Coil
 coil = { group = "io.coil-kt", name = "coil", version.ref = "coil" }
 

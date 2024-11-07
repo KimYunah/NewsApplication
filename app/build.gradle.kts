@@ -58,17 +58,24 @@ dependencies {
 
     // ViewModel
     implementation(libs.lifecycle.viewmodel)
+    implementation(libs.lifecycle.livedata)
     // by viewModels() 사용을 위한 Activity KTX, Fragment KTX
     implementation(libs.activity.ktx)
 
+    // Coroutine
+    implementation(libs.coroutines.android)
+
     // Hilt
+    implementation(libs.hilt.navigation.fragment)
+    implementation(libs.lifecycle.viewmodel.ktx)
+
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
 
     // Retrofit2
     implementation(libs.retrofit.core)
-    implementation(libs.retrofit.converter.moshi)
-    implementation(libs.moshi.kotlin)
+    implementation(libs.retrofit.converter.gson)
+    implementation(libs.gson)
 
     // Coil(이미지 로더)
     implementation(libs.coil)
